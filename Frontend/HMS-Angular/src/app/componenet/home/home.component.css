@@ -1,0 +1,65 @@
+/* Parallax Hero Section */
+.parallax-hero {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .bg-gradient-to-t {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Key Features Icons Styling */
+  i {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Parallax Section */
+  .parallax-background {
+    background-image: url('https://www.stellar.net/media/drupf4ao/healthcare_parallax_background.jpg?width=1920&format=webp&v=1da90f93cb60830'); /* Change the image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Scrolling logos */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    display: flex;
+    animation: scroll 15s linear infinite;
+  }
+  
+  /* Animation for smooth fade in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .testimonial-slider {
+    display: flex;
+  }
+  
+  .testimonial-slider div {
+    flex: 0 0 auto; /* Prevent shrinking */
+  }
+  

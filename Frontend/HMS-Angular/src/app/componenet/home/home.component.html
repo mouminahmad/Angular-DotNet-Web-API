@@ -1,0 +1,164 @@
+<section class="bg-white">
+  <!-- Hero Section -->
+  <div
+    class="relative h-screen bg-cover bg-center parallax-hero"
+    style="
+      background-image: url('https://wallpapers.com/images/hd/doctor-with-globe-in-hand-hd-medical-dff7ahiwc5xsfjm0.jpg');
+    "
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-800 to-transparent flex flex-col justify-center items-center text-center text-white"
+    >
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fadeIn">
+        Welcome to Our Hospital
+      </h1>
+      <p class="text-2xl md:text-3xl animate-fadeIn">
+        Top-notch healthcare services for a better tomorrow.
+      </p>
+    </div>
+  </div>
+
+  <!-- Counts Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+    >
+      <!-- Patient Count -->
+      <div
+        class="bg-blue-500 text-white py-8 rounded-lg shadow-md animate-bounceIn"
+      >
+        <h2 class="text-3xl font-bold">{{ patientCount }}+</h2>
+        <p class="mt-2 text-xl">Happy Patients</p>
+      </div>
+
+      <!-- Doctor Count -->
+      <div
+        class="bg-green-500 text-white py-8 rounded-lg shadow-md animate-bounceIn delay-2"
+      >
+        <h2 class="text-3xl font-bold">{{ doctorCount }}+</h2>
+        <p class="mt-2 text-xl">Experienced Doctors</p>
+      </div>
+
+      <!-- Departments Count -->
+      <div
+        class="bg-yellow-500 text-white py-8 rounded-lg shadow-md animate-bounceIn delay-4"
+      >
+        <h2 class="text-3xl font-bold">{{ departmentCount }}+</h2>
+        <p class="mt-2 text-xl">Specialized Departments</p>
+      </div>
+
+      <!-- Services -->
+      <div
+        class="bg-red-500 text-white py-8 rounded-lg shadow-md animate-bounceIn delay-6"
+      >
+        <h2 class="text-3xl font-bold">{{ serviceCount }}+</h2>
+        <p class="mt-2 text-xl">Medical Services</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Key Features Section with Icons -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Key Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        *ngFor="let feature of features"
+        class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-gray-200 transition duration-300 ease-in-out"
+      >
+        <!-- <i [class]="feature.icon" class="text-5xl text-blue-500 mb-4"></i> -->
+        <!-- Added Icon -->
+        <h3 class="text-2xl font-bold mb-4">{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Parallax Section -->
+   
+    <div
+      class="parallax-background bg-cover bg-fixed h-96 flex justify-center items-center text-white  my-12"
+    >
+      <h2 class="text-4xl font-bold">Caring for your Health</h2>
+    </div>
+
+  
+
+    <section class=" py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">What Our Patients Say</h2>
+          
+          <div class="overflow-hidden">
+            <div class="flex testimonial-slider space-x-6 transition-transform duration-500" [style.transform]="sliderTransform">
+              
+              <!-- Testimonial 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"The staff was very friendly and attentive. I received the best care!"</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Sehar</h3>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"Amazing experience! The doctors really listened to my concerns."</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Shakeel</h3>
+              </div>
+      
+              <!-- Testimonial 3 -->
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"I felt comfortable and well taken care of throughout my treatment."</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Hassan</h3>
+              </div>
+      
+              <!-- Testimonial 4 -->
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"Highly professional and caring staff. I would recommend them to anyone!"</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Maham</h3>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"Highly professional and caring staff. I would recommend them to anyone!"</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Maham</h3>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"Highly professional and caring staff. I would recommend them to anyone!"</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Billal</h3>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-md max-w-xs flex-shrink-0 text-center">
+                <p class="text-gray-600 italic">"Highly professional and caring staff. I would recommend them to anyone!"</p>
+                <h3 class="text-lg font-bold text-center mt-2">- Muhammad</h3>
+              </div>
+              
+            </div>
+          </div>
+      
+          <!-- Navigation Buttons -->
+          <div class="flex justify-end mt-6 ">
+            <button (click)="prev()" class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Previous</button>
+            <button (click)="next()" class="px-4 py-2 bg-blue-500 text-white rounded-lg">Next</button>
+          </div>
+        </div>
+      </section>
+      
+      
+
+ 
+
+  <!-- Brand Collaboration Section -->
+  <!-- <div class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-6">
+      Our Brand Collaborations
+    </h2>
+    <div class="overflow-hidden">
+      <div class="flex justify-around items-center animate-scroll">
+        <img
+          *ngFor="let brand of brands"
+          [src]="brand.logo"
+          alt="{{ brand.name }}"
+          class="h-16 mx-4"
+        />
+      </div>
+    </div>
+  </div> -->
+</section>
